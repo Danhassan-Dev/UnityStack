@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UnityStack| Professional Web Development Agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <img src="images/unitystack.png" alt="" width="100px" height="60px">
+    <a class="logo" onclick="showPage('home')">Unity<span>Stack</span></a>
+    <ul class="nav-links">
+      <li><a onclick="showPage('home')" id="nav-home" class="active">Home</a></li>
+      <li><a onclick="showPage('about')" id="nav-about">About</a></li>
+      <li><a onclick="showPage('services')" id="nav-services">Services</a></li>
+      <li><a onclick="showPage('portfolio')" id="nav-portfolio">Portfolio</a></li>
+      <li><a onclick="showPage('contact')" id="nav-contact" class="nav-cta">Get a Quote</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a onclick="showPage('home');closeMenu()">Home</a>
+  <a onclick="showPage('about');closeMenu()">About</a>
+  <a onclick="showPage('services');closeMenu()">Services</a>
+  <a onclick="showPage('portfolio');closeMenu()">Portfolio</a>
+  <a onclick="showPage('contact');closeMenu()">Contact</a>
+</div>
+
+<!-- ═══════════ HOME PAGE ═══════════ -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="noise"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-dot"></span>
+          Professional Web Development Agency
+        </div>
+        <h1>
+          <span class="line">We Build</span>
+          <span class="line accent">Websites That</span>
+          <span class="line stroke">Win Clients.</span>
+        </h1>
+        <p class="hero-desc">
+          From schools and clinics to startups and NGOs — we craft fast, modern, and conversion-focused websites that make your brand stand out and your business grow.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" onclick="showPage('contact')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Start Your Project
+          </a>
+          <a class="btn btn-outline" onclick="showPage('portfolio')">View Our Work</a>
+        </div>
+        <div class="hero-stat-row">
+          <div class="hero-stat">
+            <div class="hero-stat-num">10<span>+</span></div>
+            <div class="hero-stat-label">Projects Delivered</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">100<span>%</span></div>
+            <div class="hero-stat-label">Client Satisfaction</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">5<span>★</span></div>
+            <div class="hero-stat-label">Average Rating</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div style="position:relative; width:100%;">
+          <div class="hero-card-mock">
+            <div class="mock-bar">
+              <div class="mock-dot"></div>
+              <div class="mock-dot"></div>
+              <div class="mock-dot"></div>
+              <div class="mock-url">unitystack.netlify.app</div>
+            </div>
+            <div class="mock-body">
+              <div class="mock-hero-strip">
+                <div class="mock-hero-text">Your Business Online →</div>
+              </div>
+              <div class="mock-cards">
+                <div class="mock-card-item"></div>
+                <div class="mock-card-item"></div>
+                <div class="mock-card-item"></div>
+              </div>
+              <div class="mock-rows">
+                <div class="mock-row"></div>
+                <div class="mock-row"></div>
+                <div class="mock-row"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-badge-float b1">
+            <div class="badge-icon">⚡</div>
+            <div><strong>Fast Delivery</strong><br>7–14 day turnaround</div>
+          </div>
+          <div class="hero-badge-float b2">
+            <div class="badge-icon">🔒</div>
+            <div><strong>Secure & Reliable</strong><br>SSL + hosting support</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTS BAR -->
+  <section class="clients-section">
+    <div class="container">
+      <p class="clients-label">Serving businesses across multiple sectors</p>
+      <div class="clients-row">
+        <div class="client-tag">🏫 Private Schools</div>
+        <div class="client-tag">🏪 Small Businesses</div>
+        <div class="client-tag">🏥 Clinics & Hospitals</div>
+        <div class="client-tag">⛪ Religious Orgs</div>
+        <div class="client-tag">🌍 NGOs</div>
+        <div class="client-tag">🚀 Startups</div>
+        <div class="client-tag">👤 Personal Brands</div>
+        <div class="client-tag">🖥️ Business Centers</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro-section">
+    <div class="intro-inner">
+      <div class="intro-text fade-in">
+        <div class="badge">About UnityStack</div>
+        <h2>More Than a Developer — A Growth Partner</h2>
+        <div class="divider"></div>
+        <p>UnityStack is a web development agency built on the belief that every organization — big or small — deserves a powerful online presence without breaking the bank.</p>
+        <p>We combine clean, modern design with smart development to build websites that don't just look great — they convert visitors into paying clients.</p>
+        <div class="intro-pills">
+          <div class="pill">HTML / CSS</div>
+          <div class="pill">JavaScript</div>
+          <div class="pill">PHP</div>
+          <div class="pill">MySQL</div>
+          <div class="pill">WordPress</div>
+          <div class="pill">Responsive Design</div>
+        </div>
+      </div>
+      <div class="intro-features fade-in">
+        <div class="intro-feat">
+          <div class="feat-icon">🎯</div>
+          <div class="feat-title">Results-Focused</div>
+          <div class="feat-desc">Every pixel is placed with purpose — to attract, engage, and convert your ideal clients.</div>
+        </div>
+        <div class="intro-feat">
+          <div class="feat-icon">📱</div>
+          <div class="feat-title">Mobile-First</div>
+          <div class="feat-desc">Every site is fully responsive and tested across all devices and screen sizes.</div>
+        </div>
+        <div class="intro-feat">
+          <div class="feat-icon">⚡</div>
+          <div class="feat-title">Fast & Optimized</div>
+          <div class="feat-desc">Speed-optimized code and assets so your site loads instantly and ranks on Google.</div>
+        </div>
+        <div class="intro-feat">
+          <div class="feat-icon">🛠️</div>
+          <div class="feat-title">Ongoing Support</div>
+          <div class="feat-desc">We don't disappear after launch — maintenance and updates are always available.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES OVERVIEW -->
+  <section class="section">
+    <div class="container">
+      <div class="fade-in">
+        <div class="badge">What We Build</div>
+        <h2 class="section-title">Services That <span>Drive Results</span></h2>
+        <div class="divider"></div>
+        <p class="section-sub">From simple landing pages to full-blown school management systems — we build it all.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <div class="service-icon">🏢</div>
+          <h3>Business Websites</h3>
+          <p>Professional, brand-aligned websites that establish credibility and bring in more customers for your business.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">🏫</div>
+          <h3>School Websites</h3>
+          <p>Clean, informative school websites with admissions pages, news sections, and parent portals.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">🛒</div>
+          <h3>E-Commerce Stores</h3>
+          <p>Fully functional online stores with product listings, cart, payments, and order management.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">🖥️</div>
+          <h3>Admin Dashboards</h3>
+          <p>Custom backend systems for managing data, users, records, and operations with ease.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">🎓</div>
+          <h3>School Management Systems</h3>
+          <p>Complete platforms for attendance, grades, fees, staff, and student records — all in one system.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">🔧</div>
+          <h3>Maintenance & Redesign</h3>
+          <p>Keep your existing site fresh, fast, and secure with ongoing maintenance and modern redesigns.</p>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:50px;">
+        <a class="btn btn-outline" onclick="showPage('services')">
+          View All Services
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section why-section">
+    <div class="why-bg"></div>
+    <div class="container">
+      <div class="why-grid">
+        <div class="fade-in">
+          <div class="badge">Why Choose Us</div>
+          <h2 class="section-title">Built for <span>Serious Business</span></h2>
+          <div class="divider"></div>
+          <p class="section-sub">We understand what it takes for a small business or school to compete online. That's why we build sites that mean business.</p>
+          <div class="why-list">
+            <div class="why-item">
+              <div class="why-num">01</div>
+              <div class="why-item-content">
+                <h4>Affordable Without Compromise</h4>
+                <p>Professional-grade websites at prices that make sense for local businesses, schools, and NGOs.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-num">02</div>
+              <div class="why-item-content">
+                <h4>Personal Attention to Every Project</h4>
+                <p>As a agency, your project gets 100% focus — not handed off to a junior team member.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-num">03</div>
+              <div class="why-item-content">
+                <h4>Fast Turnaround Times</h4>
+                <p>Most projects delivered in 7–21 days. No unnecessary delays or waiting queues.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-num">04</div>
+              <div class="why-item-content">
+                <h4>After-Launch Support</h4>
+                <p>We stay available for updates, fixes, and guidance long after your site goes live.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-visual fade-in">
+          <div class="why-metric">
+            <span class="metric-num">100%</span>
+            <div class="metric-label">Projects Delivered On Time</div>
+          </div>
+          <div class="why-metric">
+            <span class="metric-num">10+</span>
+            <div class="metric-label">Websites Built</div>
+          </div>
+          <div class="why-metric">
+            <span class="metric-num">4★</span>
+            <div class="metric-label">Client Rating</div>
+          </div>
+          <div class="why-metric">
+            <span class="metric-num">24h</span>
+            <div class="metric-label">Response Time</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="container">
+      <div class="fade-in" style="text-align:center;">
+        <div class="badge">Client Testimonials</div>
+        <h2 class="section-title">Trusted by <span>Real Clients</span></h2>
+        <div class="divider" style="margin:20px auto;"></div>
+        <p class="section-sub" style="margin:0 auto 0;">Here's what clients say about working with UnityStack.</p>
+      </div>
+      <div class="testimonials-grid" style="margin-top:60px;">
+        <div class="testimonial-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"UnityStack delivered our blogging system. It looks exactly like what we envisioned — clean, professional, and easy to manage. People love it."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">NSD</div>
+            <div>
+              <div class="author-name">Aminu Murtala Dandalama.</div>
+              <div class="author-role">Group Leader, Final year Computer. </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"We needed a simple but professional website for our business center. UnityStack gave us exactly that — fast, affordable, and stunning. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">FK</div>
+            <div>
+              <div class="author-name">Fatimah K.</div>
+              <div class="author-role">Owner, CyberLink Business Center</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"The admin dashboard UnityStack built for our clinic transformed how we manage patient records. It's intuitive, secure, and he was available every step of the way."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">Dr</div>
+            <div>
+              <div class="author-name">Dr. Ibrahim A.</div>
+              <div class="author-role">Medical Director, Al-Shifa Clinic</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOME CTA -->
+  <section class="home-cta">
+    <div class="home-cta-bg"></div>
+    <div class="home-cta-inner fade-in">
+      <div class="badge" style="margin:0 auto 20px;">Ready to Get Started?</div>
+      <h2>Let's Build Something <span style="color:var(--accent);">Remarkable</span></h2>
+      <p>Whether you need a simple landing page or a complete web system — we're ready to bring your vision to life. Get a free quote today.</p>
+      <div class="cta-buttons">
+        <a class="btn btn-primary" onclick="showPage('contact')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          Get a Free Quote
+        </a>
+        <a class="btn btn-outline" onclick="showPage('services')">View Pricing</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+<!-- END HOME -->
+
+
+<!-- ═══════════ ABOUT PAGE ═══════════ -->
+<div id="page-about" class="page">
+
+  <div class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <div class="badge">Our Story</div>
+      <h1>About <span style="color:var(--accent);">UnityStack</span></h1>
+      <p>A web development agency with a big vision — making professional web development accessible to every business, school, and organization.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-grid fade-in">
+        <div>
+          <div class="badge">The Founder</div>
+          <h2 class="section-title">Meet the <span>Person Behind</span> the Work</h2>
+          <div class="divider"></div>
+          <p style="color:var(--text2); line-height:1.8; margin-bottom:16px;">UnityStack was founded with a simple but powerful belief: that quality web development shouldn't be a luxury reserved for big companies with massive budgets.</p>
+          <p style="color:var(--text2); line-height:1.8; margin-bottom:16px;">Too many local businesses, schools, clinics, and NGOs are either priced out of professional web services or end up with poor-quality sites that hurt their credibility instead of building it.</p>
+          <p style="color:var(--text2); line-height:1.8; margin-bottom:32px;">That gap is exactly why this agency exists — to bridge the divide between professional-grade development and affordable, accessible pricing for organizations that deserve to thrive online.</p>
+          <a class="btn btn-primary" onclick="showPage('contact')">Work With Us</a>
+        </div>
+        <div class="founder-card fade-in">
+          <div class="founder-avatar"><img src="images/danhassan.jpg" alt="danhassan" width="250px" height="160px" style="border-radius: 20px;"></div>
+          <div class="founder-name">Haruna Hafizu Hussaini (Danhassan)</div>
+          <div class="founder-title">Founder & Lead Developer</div>
+          <p class="founder-bio">A passionate full-stack web developer with expertise in building clean, functional, and business-focused websites. Dedicated to helping clients succeed online with modern, tailored web solutions.</p>
+          <div class="founder-skills">
+            <div class="skill-tag">HTML5</div>
+            <div class="skill-tag">CSS3</div>
+            <div class="skill-tag">JavaScript</div>
+            <div class="skill-tag">PHP</div>
+            <div class="skill-tag">MySQL</div>
+            <div class="skill-tag">Responsive Design</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--ink2); border-top:1px solid var(--border);">
+    <div class="container">
+      <div class="fade-in" style="text-align:center;">
+        <div class="badge">Mission & Vision</div>
+        <h2 class="section-title">What <span>Drives Us</span></h2>
+        <div class="divider" style="margin:20px auto;"></div>
+      </div>
+      <div class="mvv-grid">
+        <div class="mvv-card fade-in" data-label="M">
+          <div class="mvv-icon">🎯</div>
+          <h3>Our Mission</h3>
+          <p>To provide every business, school, NGO, and individual with professional, affordable, and results-driven web development services that help them grow their presence and impact online.</p>
+        </div>
+        <div class="mvv-card fade-in" data-label="V">
+          <div class="mvv-icon">🔭</div>
+          <h3>Our Vision</h3>
+          <p>To become the most trusted web development partner for small and mid-size organizations across Africa and beyond — known for quality, reliability, and genuine care for client success.</p>
+        </div>
+        <div class="mvv-card fade-in" data-label="W">
+          <div class="mvv-icon">💡</div>
+          <h3>Why We Exist</h3>
+          <p>Because too many local businesses are invisible online. We exist to change that — one well-crafted website at a time, giving every client the digital presence they deserve.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="fade-in">
+        <div class="badge">Core Values</div>
+        <h2 class="section-title">What We <span>Stand For</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="values-grid">
+        <div class="value-item fade-in">
+          <div class="value-check">✓</div>
+          <div>
+            <h4>Quality First</h4>
+            <p>Every project is built with the highest standards of code quality, design, and performance.</p>
+          </div>
+        </div>
+        <div class="value-item fade-in">
+          <div class="value-check">✓</div>
+          <div>
+            <h4>Honest Communication</h4>
+            <p>Clear timelines, transparent pricing, and no hidden surprises — ever.</p>
+          </div>
+        </div>
+        <div class="value-item fade-in">
+          <div class="value-check">✓</div>
+          <div>
+            <h4>Client-Centered Approach</h4>
+            <p>Your goals and vision are at the center of everything we design and build.</p>
+          </div>
+        </div>
+        <div class="value-item fade-in">
+          <div class="value-check">✓</div>
+          <div>
+            <h4>Continuous Improvement</h4>
+            <p>Always learning new technologies and refining skills to deliver cutting-edge solutions.</p>
+          </div>
+        </div>
+        <div class="value-item fade-in">
+          <div class="value-check">✓</div>
+          <div>
+            <h4>Reliability</h4>
+            <p>Deadlines are honored, calls are answered, and commitments are kept — always.</p>
+          </div>
+        </div>
+        <div class="value-item fade-in">
+          <div class="value-check">✓</div>
+          <div>
+            <h4>Accessibility</h4>
+            <p>Making professional web services accessible to organizations of all sizes and budgets.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+<!-- END ABOUT -->
+
+
+<!-- ═══════════ SERVICES PAGE ═══════════ -->
+<div id="page-services" class="page">
+
+  <div class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <div class="badge">What We Offer</div>
+      <h1>Our <span style="color:var(--accent);">Services</span></h1>
+      <p>From landing pages to full systems — we provide end-to-end web development tailored to your specific needs and budget.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="fade-in">
+        <div class="badge">All Services</div>
+        <h2 class="section-title">Everything You Need <span>Online</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="services-detailed">
+        <div class="service-detail-card fade-in">
+          <div class="sdc-top"><div class="sdc-icon">🏢</div><div class="sdc-name">Business Websites</div></div>
+          <p class="sdc-desc">Professional websites for small businesses, shops, and corporate organizations that build credibility and attract clients.</p>
+          <ul class="sdc-list">
+            <li>Modern, branded design</li>
+            <li>Services & product pages</li>
+            <li>Contact forms & Google Maps</li>
+            <li>Mobile responsive</li>
+            <li>SEO-ready structure</li>
+          </ul>
+        </div>
+        <div class="service-detail-card fade-in">
+          <div class="sdc-top"><div class="sdc-icon">🏫</div><div class="sdc-name">School Websites</div></div>
+          <p class="sdc-desc">Informative, clean school websites that showcase programs, news, and admissions to attract parents and students.</p>
+          <ul class="sdc-list">
+            <li>Admissions pages</li>
+            <li>News & announcements</li>
+            <li>Staff & class showcase</li>
+            <li>Gallery section</li>
+            <li>Parent contact portal</li>
+          </ul>
+        </div>
+        <div class="service-detail-card fade-in">
+          <div class="sdc-top"><div class="sdc-icon">👤</div><div class="sdc-name">Portfolio Websites</div></div>
+          <p class="sdc-desc">Stunning personal portfolio sites for freelancers, creatives, and professionals to showcase their work and skills.</p>
+          <ul class="sdc-list">
+            <li>Work showcase gallery</li>
+            <li>Bio & skills section</li>
+            <li>Resume/CV download</li>
+            <li>Client testimonials</li>
+            <li>Contact & hire section</li>
+          </ul>
+        </div>
+        <div class="service-detail-card fade-in">
+          <div class="sdc-top"><div class="sdc-icon">🛒</div><div class="sdc-name">E-Commerce Websites</div></div>
+          <p class="sdc-desc">Full online stores with product listings, shopping cart, payment gateway, and order management capabilities.</p>
+          <ul class="sdc-list">
+            <li>Product catalog & filters</li>
+            <li>Shopping cart & checkout</li>
+            <li>Payment integration</li>
+            <li>Order management</li>
+            <li>Inventory tracking</li>
+          </ul>
+        </div>
+        <div class="service-detail-card fade-in">
+          <div class="sdc-top"><div class="sdc-icon">🎯</div><div class="sdc-name">Landing Pages</div></div>
+          <p class="sdc-desc">High-converting single-page sites built specifically to promote one product, service, or campaign and generate leads.</p>
+          <ul class="sdc-list">
+            <li>Strong hero & CTA</li>
+            <li>Benefits & features section</li>
+            <li>Lead capture form</li>
+            <li>Social proof section</li>
+            <li>Conversion-optimized</li>
+          </ul>
+        </div>
+        <div class="service-detail-card fade-in">
+          <div class="sdc-top"><div class="sdc-icon">📰</div><div class="sdc-name">Blog & News Websites</div></div>
+          <p class="sdc-desc">Content-driven websites for sharing news, articles, opinions, and resources with your audience.</p>
+          <ul class="sdc-list">
+            <li>Article management system</li>
+            <li>Categories & tags</li>
+            <li>Author profiles</li>
+            <li>Comment system</li>
+            <li>Newsletter integration</li>
+          </ul>
+        </div>
+        <div class="service-detail-card fade-in">
+          <div class="sdc-top"><div class="sdc-icon">🖥️</div><div class="sdc-name">Admin Dashboards</div></div>
+          <p class="sdc-desc">Custom backend systems for managing business data, users, reports, and operations from a central interface.</p>
+          <ul class="sdc-list">
+            <li>User management</li>
+            <li>Data tables & charts</li>
+            <li>Reports & exports</li>
+            <li>Role-based access</li>
+            <li>Real-time updates</li>
+          </ul>
+        </div>
+        <div class="service-detail-card fade-in">
+          <div class="sdc-top"><div class="sdc-icon">🎓</div><div class="sdc-name">School Management Systems</div></div>
+          <p class="sdc-desc">All-in-one platforms for schools to manage students, staff, attendance, grades, fees, and more.</p>
+          <ul class="sdc-list">
+            <li>Student & staff records</li>
+            <li>Attendance tracking</li>
+            <li>Grade & result management</li>
+            <li>Fee payment tracking</li>
+            <li>Report generation</li>
+          </ul>
+        </div>
+        <div class="service-detail-card fade-in">
+          <div class="sdc-top"><div class="sdc-icon">🌐</div><div class="sdc-name">Hosting & Domain Support</div></div>
+          <p class="sdc-desc">End-to-end support for getting your website live — domain registration, hosting setup, SSL, and deployment.</p>
+          <ul class="sdc-list">
+            <li>Domain registration</li>
+            <li>Hosting setup</li>
+            <li>SSL certificate</li>
+            <li>Email setup</li>
+            <li>Full deployment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section pricing-section">
+    <div class="container">
+      <div class="fade-in" style="text-align:center;">
+        <div class="badge">Transparent Pricing</div>
+        <h2 class="section-title">Simple, <span>Honest Pricing</span></h2>
+        <div class="divider" style="margin:20px auto;"></div>
+        <p class="section-sub" style="margin:0 auto;">Starting prices for common project types. Every project is unique — get a custom quote for your specific needs.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card fade-in">
+          <div class="pricing-tier">Basic</div>
+          <div class="pricing-price">₦30,000<sub> / from</sub></div>
+          <div class="pricing-note">Ideal for landing pages & simple sites</div>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-list">
+            <li class="has"><span class="check-y">✓</span> Up to 3 pages</li>
+            <li class="has"><span class="check-y">✓</span> Mobile responsive</li>
+            <li class="has"><span class="check-y">✓</span> Contact form</li>
+            <li class="has"><span class="check-y">✓</span> SEO basics</li>
+            <li class="has"><span class="check-y">✓</span> 7-day delivery</li>
+            <li><span class="check-n">✗</span> Admin panel</li>
+            <li><span class="check-n">✗</span> Database integration</li>
+            <li><span class="check-n">✗</span> Custom systems</li>
+          </ul>
+          <a class="btn btn-outline" style="width:100%;justify-content:center;" onclick="showPage('contact')">Get Started</a>
+        </div>
+        <div class="pricing-card featured fade-in">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-tier">Standard</div>
+          <div class="pricing-price">₦80,000<sub> / from</sub></div>
+          <div class="pricing-note">Perfect for businesses & schools</div>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-list">
+            <li class="has"><span class="check-y">✓</span> Up to 8 pages</li>
+            <li class="has"><span class="check-y">✓</span> Mobile responsive</li>
+            <li class="has"><span class="check-y">✓</span> Contact & inquiry forms</li>
+            <li class="has"><span class="check-y">✓</span> Full SEO setup</li>
+            <li class="has"><span class="check-y">✓</span> 14-day delivery</li>
+            <li class="has"><span class="check-y">✓</span> Basic admin panel</li>
+            <li class="has"><span class="check-y">✓</span> Database integration</li>
+            <li><span class="check-n">✗</span> Custom systems</li>
+          </ul>
+          <a class="btn btn-primary" style="width:100%;justify-content:center;" onclick="showPage('contact')">Get Started</a>
+        </div>
+        <div class="pricing-card fade-in">
+          <div class="pricing-tier">Custom</div>
+          <div class="pricing-price">Custom<sub> quote</sub></div>
+          <div class="pricing-note">For complex systems & platforms</div>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-list">
+            <li class="has"><span class="check-y">✓</span> Unlimited pages</li>
+            <li class="has"><span class="check-y">✓</span> Mobile responsive</li>
+            <li class="has"><span class="check-y">✓</span> All form types</li>
+            <li class="has"><span class="check-y">✓</span> Advanced SEO</li>
+            <li class="has"><span class="check-y">✓</span> Agreed timeline</li>
+            <li class="has"><span class="check-y">✓</span> Full admin system</li>
+            <li class="has"><span class="check-y">✓</span> Complex databases</li>
+            <li class="has"><span class="check-y">✓</span> Custom features</li>
+          </ul>
+          <a class="btn btn-outline" style="width:100%;justify-content:center;" onclick="showPage('contact')">Request Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="fade-in" style="text-align:center;">
+        <div class="badge">FAQs</div>
+        <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+        <div class="divider" style="margin:20px auto;"></div>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item fade-in">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>How long does it take to build a website?</span>
+            <div class="faq-arrow">+</div>
+          </div>
+          <div class="faq-a"><div class="faq-a-inner">Simple websites typically take 5–10 days. Standard multi-page websites take 10–21 days. Complex systems like school management platforms or e-commerce stores may take 30–60 days depending on scope. We'll give you a clear timeline before starting your project.</div></div>
+        </div>
+        <div class="faq-item fade-in">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>Do you offer payment in installments?</span>
+            
+            <div class="faq-arrow">+</div>
+          </div>
+          <div class="faq-a"><div class="faq-a-inner">Yes! For most projects, we accept 50% upfront to start the work and the remaining 50% upon completion before handover. For larger projects, a 3-installment plan can be arranged. We're flexible and always happy to discuss what works best for you.</div></div>
+        </div>
+        <div class="faq-item fade-in">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>Will I be able to update the website myself?</span>
+            <div class="faq-arrow">+</div>
+          </div>
+          <div class="faq-a"><div class="faq-a-inner">Absolutely. Depending on the type of site, we either build a user-friendly admin panel that lets you update content yourself, or we provide simple training and documentation. We can also offer a maintenance package if you'd prefer us to handle all updates.</div></div>
+        </div>
+        <div class="faq-item fade-in">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>Do you help with domain and hosting?</span>
+            <div class="faq-arrow">+</div>
+          </div>
+          <div class="faq-a"><div class="faq-a-inner">Yes — we handle everything from domain registration to hosting setup, SSL certificate installation, and full deployment. We'll help you choose the right hosting plan based on your site's needs and budget.</div></div>
+        </div>
+        <div class="faq-item fade-in">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>What information do I need to provide to start?</span>
+            <div class="faq-arrow">+</div>
+          </div>
+          <div class="faq-a"><div class="faq-a-inner">To get started, we'll need a brief description of your business or organization, your goals for the website, any design preferences or inspiration sites you like, your logo and brand colors (if available), and the content (text and images) you want on the site. We'll guide you through the rest in our initial consultation.</div></div>
+        </div>
+        <div class="faq-item fade-in">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>Do you build websites for NGOs and religious organizations?</span>
+            <div class="faq-arrow">+</div>
+          </div>
+          <div class="faq-a"><div class="faq-a-inner">Yes, absolutely. We have experience working with NGOs, faith-based organizations, mosques, churches, and community groups. We understand your unique needs and offer special pricing for non-profit organizations.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+<!-- END SERVICES -->
+
+
+<!-- ═══════════ PORTFOLIO PAGE ═══════════ -->
+<div id="page-portfolio" class="page">
+
+  <div class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <div class="badge">Our Work</div>
+      <h1>Portfolio & <span style="color:var(--accent);">Projects</span></h1>
+      <p>A showcase of websites and systems we've designed and built — each one crafted to serve real business goals.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="portfolio-filter">
+        <button class="filter-btn active" onclick="filterPortfolio('all', this)">All Projects</button>
+        <button class="filter-btn" onclick="filterPortfolio('school', this)">Schools</button>
+        <button class="filter-btn" onclick="filterPortfolio('business', this)">Business</button>
+        <button class="filter-btn" onclick="filterPortfolio('dashboard', this)">Dashboards</button>
+        <button class="filter-btn" onclick="filterPortfolio('portfolio', this)">Portfolio</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-item pi-type1 fade-in" data-cat="school">
+          <div class="portfolio-preview">
+            <div class="portfolio-preview-inner">
+              <div class="preview-bar">
+                <div class="preview-dot" style="background:#ff5f57;"></div>
+                <div class="preview-dot" style="background:#ffbd2e;"></div>
+                <div class="preview-dot" style="background:#28ca41;"></div>
+              </div>
+              <div class="preview-body">
+                <div class="preview-block" style="height:40px;background:linear-gradient(90deg,#7c3aed,#4c1d95);border-radius:6px;margin-bottom:8px;"></div>
+                <div class="preview-block" style="height:10px;background:#2d2d3d;width:70%;"></div>
+                <div class="preview-block" style="height:10px;background:#2d2d3d;width:50%;margin-top:5px;"></div>
+                <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:10px;">
+                  <div style="height:30px;background:#2d2d3d;border-radius:4px;"></div>
+                  <div style="height:30px;background:#2d2d3d;border-radius:4px;"></div>
+                  <div style="height:30px;background:#2d2d3d;border-radius:4px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <!-- <img src="images/library.png" alt="" width="200px" height="100px"> -->
+            <div class="portfolio-tag">School Website</div>
+            <h3>Audu Bako College of Agriculture Dambatta</h3>
+            <p>A modern Library management System.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item pi-type2 fade-in" data-cat="business">
+          <div class="portfolio-preview">
+            <div class="portfolio-preview-inner">
+              <div class="preview-bar">
+                <div class="preview-dot" style="background:#ff5f57;"></div>
+                <div class="preview-dot" style="background:#ffbd2e;"></div>
+                <div class="preview-dot" style="background:#28ca41;"></div>
+              </div>
+              <div class="preview-body">
+                <div class="preview-block" style="height:40px;background:linear-gradient(90deg,#059669,#064e3b);border-radius:6px;margin-bottom:8px;"></div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px;">
+                  <div style="height:35px;background:#1d2d1d;border-radius:4px;"></div>
+                  <div style="height:35px;background:#1d2d1d;border-radius:4px;"></div>
+                </div>
+                <div class="preview-block" style="height:10px;background:#1d2d1d;width:85%;"></div>
+                <div class="preview-block" style="height:10px;background:#1d2d1d;width:60%;margin-top:5px;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tag">BloggingWebsite</div>
+            <h3>CyberLink Business Center</h3>
+            <p>Professional website for a business center with services, pricing, and online booking.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item pi-type3 fade-in" data-cat="dashboard">
+          <div class="portfolio-preview">
+            <div class="portfolio-preview-inner">
+              <div class="preview-bar">
+                <div class="preview-dot" style="background:#ff5f57;"></div>
+                <div class="preview-dot" style="background:#ffbd2e;"></div>
+                <div class="preview-dot" style="background:#28ca41;"></div>
+              </div>
+              <div class="preview-body">
+                <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px;margin-bottom:8px;">
+                  <div style="height:28px;background:#2d2000;border-radius:4px;border:1px solid #f59e0b33;"></div>
+                  <div style="height:28px;background:#2d2000;border-radius:4px;border:1px solid #f59e0b33;"></div>
+                  <div style="height:28px;background:#2d2000;border-radius:4px;border:1px solid #f59e0b33;"></div>
+                </div>
+                <div style="height:50px;background:#1e1500;border-radius:4px;border:1px solid #f59e0b22;margin-bottom:8px;display:flex;align-items:center;padding:0 8px;">
+                  <div style="height:8px;background:#f59e0b;border-radius:3px;width:60%;"></div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:4px;">
+                  <div style="height:8px;background:#2d2000;border-radius:3px;"></div>
+                  <div style="height:8px;background:#2d2000;border-radius:3px;width:75%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tag">Admin Dashboard</div>
+            <h3>Al-Shifa Clinic Management</h3>
+            <p>Full patient record management system with appointments, billing, and staff access controls.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item pi-type4 fade-in" data-cat="portfolio">
+          <div class="portfolio-preview">
+            <div class="portfolio-preview-inner">
+              <div class="preview-bar">
+                <div class="preview-dot" style="background:#ff5f57;"></div>
+                <div class="preview-dot" style="background:#ffbd2e;"></div>
+                <div class="preview-dot" style="background:#28ca41;"></div>
+              </div>
+              <div class="preview-body">
+                <div style="display:flex;gap:8px;align-items:center;margin-bottom:10px;">
+                  <div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#3b82f6,#1d4ed8);flex-shrink:0;"></div>
+                  <div>
+                    <div style="height:8px;background:#1e2d4d;border-radius:3px;width:80px;margin-bottom:4px;"></div>
+                    <div style="height:6px;background:#1e2d4d;border-radius:3px;width:50px;"></div>
+                  </div>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:5px;">
+                  <div style="height:40px;background:#0d1b30;border-radius:4px;border:1px solid #1e3a5f;"></div>
+                  <div style="height:40px;background:#0d1b30;border-radius:4px;border:1px solid #1e3a5f;"></div>
+                  <div style="height:40px;background:#0d1b30;border-radius:4px;border:1px solid #1e3a5f;"></div>
+                  <div style="height:40px;background:#0d1b30;border-radius:4px;border:1px solid #1e3a5f;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tag">Portfolio Site</div>
+            <h3>Personal Developer Portfolio</h3>
+            <p>A sleek developer portfolio with project showcase, skills section, and client contact form.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item pi-type1 fade-in" data-cat="school">
+          <div class="portfolio-preview">
+            <div class="portfolio-preview-inner">
+              <div class="preview-bar">
+                <div class="preview-dot" style="background:#ff5f57;"></div>
+                <div class="preview-dot" style="background:#ffbd2e;"></div>
+                <div class="preview-dot" style="background:#28ca41;"></div>
+              </div>
+              <div class="preview-body">
+                <div style="height:35px;background:linear-gradient(90deg,#6d28d9,#2e1065);border-radius:5px;margin-bottom:8px;"></div>
+                <div style="height:8px;background:#2d2d3d;border-radius:3px;margin-bottom:5px;"></div>
+                <div style="height:8px;background:#2d2d3d;border-radius:3px;width:80%;margin-bottom:10px;"></div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:5px;">
+                  <div style="height:35px;background:#1a1a2e;border-radius:4px;border:1px solid #3d2070;"></div>
+                  <div style="height:35px;background:#1a1a2e;border-radius:4px;border:1px solid #3d2070;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tag">School System</div>
+            <h3>EduTrack School Management</h3>
+            <p>Complete school management system with student records, grades, fees, and attendance tracking.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item pi-type2 fade-in" data-cat="business">
+          <div class="portfolio-preview">
+            <div class="portfolio-preview-inner">
+              <div class="preview-bar">
+                <div class="preview-dot" style="background:#ff5f57;"></div>
+                <div class="preview-dot" style="background:#ffbd2e;"></div>
+                <div class="preview-dot" style="background:#28ca41;"></div>
+              </div>
+              <div class="preview-body">
+                <div style="height:40px;background:linear-gradient(90deg,#0d9488,#134e4a);border-radius:6px;margin-bottom:8px;display:flex;align-items:center;padding:0 10px;">
+                  <div style="height:14px;background:rgba(255,255,255,0.2);border-radius:3px;width:60%;"></div>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px;margin-bottom:8px;">
+                  <div style="height:50px;background:#0a2520;border-radius:4px;"></div>
+                  <div style="height:50px;background:#0a2520;border-radius:4px;"></div>
+                  <div style="height:50px;background:#0a2520;border-radius:4px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tag">NGO Website</div>
+            <h3>Hope Foundation NGO</h3>
+            <p>An impactful non-profit website with donation page, programs, news, and volunteer registration.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:60px;" class="fade-in">
+        <p style="color:var(--text2); margin-bottom:24px; font-size:0.95rem;">Have a project in mind? Let's discuss how we can build it for you.</p>
+        <a class="btn btn-primary" onclick="showPage('contact')">
+          Start Your Project
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</div>
+<!-- END PORTFOLIO -->
+
+
+<!-- ═══════════ CONTACT PAGE ═══════════ -->
+<div id="page-contact" class="page">
+
+  <div class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <div class="badge">Get In Touch</div>
+      <h1>Let's Build <span style="color:var(--accent);">Together</span></h1>
+      <p>Tell us about your project. We'll get back to you within 24 hours with a free consultation and quote.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <div>
+            <h3 style="font-family:var(--font-display);font-size:1.3rem;font-weight:800;color:var(--white);margin-bottom:8px;">Contact Information</h3>
+            <p style="font-size:0.88rem;color:var(--text2);margin-bottom:28px;">Reach out through any channel below. We're available and responsive.</p>
+          </div>
+
+          <a class="wa-button" href="https://wa.me/+2347047548830" target="_blank">
+            <div style="font-size:1.6rem;">💬</div>
+            <div>
+              <div class="wa-button-text">Chat on WhatsApp</div>
+              <div class="wa-button-sub">Fastest way to reach us — reply within minutes</div>
+            </div>
+          </a>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">📧</div>
+            <div>
+              <h4>Email Address</h4>
+              <a href="danhassan2040@gmail.com">danhassan2040@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">📞</div>
+            <div>
+              <h4>Phone / WhatsApp</h4>
+              <a href="tel:+2347047548830">+234 70 4754 8830</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>Nigeria (Remote — Serving Clients Nationwide)</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">⏰</div>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Always open</p>
+            </div>
+          </div>
+
+          <div>
+            <p style="font-size:0.82rem;color:var(--text2);margin-bottom:12px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;">Follow Us</p>
+            <div class="social-row">
+              <a class="social-link" href="#" title="Facebook">f</a>
+              <a class="social-link" href="#" title="Instagram">in</a>
+              <a class="social-link" href="#" title="Twitter / X">𝕏</a>
+              <a class="social-link" href="#" title="LinkedIn">Li</a>
+              <a class="social-link" href="danhassan_dev" title="GitHub">gh</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form fade-in">
+          <div class="form-title">Send Us a Message</div>
+          <div class="form-sub">Fill in the form and we'll respond with a free quote and timeline estimate.</div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label">First Name *</label>
+              <input type="text" class="form-input" placeholder="Your first name" id="fname">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Last Name *</label>
+              <input type="text" class="form-input" placeholder="Your last name" id="lname">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address *</label>
+              <input type="email" class="form-input" placeholder="your@email.com" id="femail">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone / WhatsApp</label>
+              <input type="tel" class="form-input" placeholder="+234 800 000 0000" id="fphone">
+            </div>
+            <div class="form-group full">
+              <label class="form-label">Organization / Business Name</label>
+              <input type="text" class="form-input" placeholder="e.g. ABC School, XYZ Business" id="forg">
+            </div>
+            <div class="form-group full">
+              <label class="form-label">Service Needed *</label>
+              <select class="form-select form-input" id="fservice">
+                <option value="">— Select a service —</option>
+                <option>Business Website</option>
+                <option>School Website</option>
+                <option>Portfolio Website</option>
+                <option>E-Commerce Website</option>
+                <option>Landing Page</option>
+                <option>Blog / News Website</option>
+                <option>Admin Dashboard</option>
+                <option>School Management System</option>
+                <option>Borrowing / Voting System</option>
+                <option>Website Maintenance</option>
+                <option>Website Redesign</option>
+                <option>Hosting & Domain Support</option>
+                <option>Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label class="form-label">Budget Range</label>
+              <select class="form-select form-input" id="fbudget">
+                <option value="">— Select a range —</option>
+                <option>Under ₦30,000</option>
+                <option>₦30,000 – ₦50,000</option>
+                <!-- <option>₦80,000 – ₦100,000</option>
+                <option>₦200,000 – ₦500,000</option>
+                <option>Above ₦500,000</option>-->
+                <option>Flexible / Discuss</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label class="form-label">Tell Us About Your Project *</label>
+              <textarea class="form-textarea" placeholder="Describe what you need, your goals, and any specific features or requirements you have in mind..." id="fmessage"></textarea>
+            </div>
+          </div>
+          <button class="form-submit" onclick="submitForm()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            Send Message & Get Free Quote
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+<!-- END CONTACT -->
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">UnityStack<span>-Tech</span></div>
+      <p class="footer-tagline">Professional, affordable, and reliable web development services for businesses, schools, NGOs, and startups.</p>
+      <div class="social-row">
+        <a class="social-link" href="#">f</a>
+        <a class="social-link" href="#">in</a>
+        <a class="social-link" href="#">𝕏</a>
+        <a class="social-link" href="#">Li</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul class="footer-links">
+        <li><a onclick="showPage('services')">Business Websites</a></li>
+        <li><a onclick="showPage('services')">School Websites</a></li>
+        <li><a onclick="showPage('services')">E-Commerce Stores</a></li>
+        <li><a onclick="showPage('services')">Admin Dashboards</a></li>
+        <li><a onclick="showPage('services')">School Systems</a></li>
+        <li><a onclick="showPage('services')">Landing Pages</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul class="footer-links">
+        <li><a onclick="showPage('home')">Home</a></li>
+        <li><a onclick="showPage('about')">About Us</a></li>
+        <li><a onclick="showPage('portfolio')">Portfolio</a></li>
+        <li><a onclick="showPage('contact')">Contact</a></li>
+        <li><a onclick="showPage('services')">Pricing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul class="footer-links">
+        <li><a href="mailto:unitystack.netlify.app">unitystack</a></li>
+        <li><a href="tel:+2347047548830">+234 704 754 8830</a></li>
+        <li><a>Nigeria (Remote)</a></li>
+        <li><a>Mon-Sun: 8AM – 9PM</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 <span>UnityStack</span>. All rights reserved.</div>
+    <div class="footer-legal">
+      <a>Privacy Policy</a>
+      <a>Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <span class="toast-icon">✓</span> <span id="toastMsg">Message sent successfully!</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
